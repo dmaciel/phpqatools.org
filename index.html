@@ -1,103 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The PHP Quality Assurance Toolchain" />
-  <meta name="author" content="Sebastian Bergmann" />
-  <meta property="og:email" content="sb@sebastian-bergmann.de" />
-  <meta property="og:site_name" content="The PHP Quality Assurance Toolchain" />
-  <meta property="og:title" content="The PHP Quality Assurance Toolchain" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://phpqatools.org/" />
-  <link rel="canonical" href="http://phpqatools.org/" />
-  <title>The PHP Quality Assurance Toolchain</title>
-
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans:700|Source+Code+Pro' rel='stylesheet' type='text/css'>
-  <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
- </head>
-
- <body>
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav navbar-left"><li class="active"><a href="index.html">The PHP Quality Assurance Toolchain</a></li></ul>
-    </div>
-  </nav>
-  <div class="container">
-   <div class="row">
-    <div class="col-md-4">
-     <h2>PHPUnit</h2>
-     <p><a href="http://www.phpunit.de/">PHPUnit</a> is the de-facto standard for <a href="http://en.wikipedia.org/wiki/Unit_testing">unit testing</a> in PHP projects. It provides both a framework that makes the writing of tests easy as well as the functionality to easily run the tests and analyse their results.</p>
-    </div>
-    <div class="col-md-4">
-     <h2>vfsStream</h2>
-     <p><a href="http://github.com/mikey179/vfsStream">vfsStream</a> is a stream wrapper for a virtual file system that may be helpful in unit tests to mock the real file system.</p>
-    </div>
-    <div class="col-md-4">
-     <h2>Behat</h2>
-     <p><a href="http://behat.org/">Behat</a> is a framework for <a href="http://en.wikipedia.org/wiki/Behavior_Driven_Development">Behavior Driven Development (BDD)</a> that is inspired by <a href="http://cukes.info/">Cucumber</a>.</p>
-    </div>
-   </div>
-   <div class="row">
-    <div class="col-md-4">
-     <h2>PHPLOC</h2>
-     <p><a href="http://github.com/sebastianbergmann/phploc">phploc</a> is a tool for quickly measuring the size of a PHP project.</p>
-    </div>
-    <div class="col-md-4">
-     <h2>PHP_Depend</h2>
-     <p><a href="http://pdepend.org/">pdepend</a> can generate a large set of <a href="http://en.wikipedia.org/wiki/Software_metric">software metrics</a> from a given code base. These values can be used to measure the quality of a software project and they help to identify the parts of an application where a <a href="http://en.wikipedia.org/wiki/Code_refactoring">code refactoring</a> should be applied.</p>
-    </div>
-    <div class="col-md-4">
-     <h2>PHP Mess Detector</h2>
-     <p><a href="http://phpmd.org/">phpmd</a> scans PHP source code and looks for potential problems such as possible bugs, dead code, suboptimal code, and overcomplicated expressions</p>
-    </div>
-   </div>
-   <div class="row">
-    <div class="col-md-4">
-     <h2>PHP_CodeSniffer</h2>
-     <p><a href="http://pear.php.net/PHP_CodeSniffer">phpcs</a> tokenises PHP, JavaScript and CSS files and detects violations of a defined set of coding standards. It is an essential development tool that ensures your code remains clean and consistent. It can also help prevent some common semantic errors made by developers.</p>
-    </div>
-    <div class="col-md-4">
-     <h2>PHP Copy/Paste Detector</h2>
-     <p><a href="http://github.com/sebastianbergmann/phpcpd">phpcpd</a> is a Copy/Paste Detector (CPD) for PHP code. It scans a PHP project for <a href="http://en.wikipedia.org/wiki/Duplicate_code">duplicated code</a>.</p>
-    </div>
-    <div class="col-md-4">
-     <h2>phpDox</h2>
-     <p><a href="http://phpdox.de/">phpDox</a> is the documentation generator for PHP projects. This includes, but is not limited to, API documentation.</p>
-    </div>
-   </div>
-   <div class="row">
-    <div class="col-md-4">
-     <h2>Jenkins PHP</h2>
-     <p>The goal of the <a href="http://jenkins-php.org/">Template for Jenkins Jobs for PHP Projects</a> is to provide a standard template for Jenkins (the leading open-source <a href="http://martinfowler.com/articles/continuousIntegration.html">continuous integration</a> server) jobs for PHP projects.</p>
-    </div>
-    <div class="col-md-4">
-     <h2>PhpMetrics</h2>
-     <p><a href="http://phpmetrics.org/">PhpMetrics</a> is a static analyzer tool. It provides a large set of <a href="http://en.wikipedia.org/wiki/Software_metric">software metrics</a> from a given code base. PhpMetrics generates readable and accessible reports about maintainability, quality and complexity of a source code.</p>
-    </div>
-    <div class="col-md-4">
-     <h2>QA-Tools</h2>
-     <p><a href="http://www.qa-tools.io/">QA-Tools</a> is a library, that makes acceptance test writing a breeze through <a href="http://www.qa-tools.io/PageObject-pattern/">PageObject pattern</a> usage in the tests.</p>
-    </div>
-   </div>
-   <hr>
-   <footer>
-    <div align="center"><p>The <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type"><a xmlns:cc="http://creativecommons.org/ns#" href="http://phpqatools.org/" property="cc:attributionName" rel="cc:attributionURL">content of this website</a></span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p></div>
-   </footer>
-  </div>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript">var _paq = _paq || [];_paq.push(["trackPageView"]);_paq.push(["enableLinkTracking"]);(function() {var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.sebastian-bergmann.de/";_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["setSiteId", "5"]);var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);})();</script>
- </body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>phpqatools.org</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>phpqatools.org</h1>
+    <p>This website used to be a list, curated by <a href="https://sebastian-bergmann.de/">Sebastian Bergmann</a>, of quality assurance tools for PHP.</p>
+    <p>This website has been superseded by a community-curated list of static analysis tools for PHP at <a href="https://github.com/exakat/php-static-analysis-tools">exakat/php-static-analysis-tools</a> on GitHub.</p>
+    <p>If you need support with the selection and adoption of suitable tools to improve your PHP development process then <a href="https://thephp.cc/implementation/tools">thePHP.cc</a> can help you.</p>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
+
